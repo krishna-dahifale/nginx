@@ -1,5 +1,5 @@
 - name: install nginx
-  hosts: test
+  hosts: nginx-server
   user: acm
   become: yes
   tasks:  
