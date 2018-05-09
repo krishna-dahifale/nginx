@@ -4,10 +4,10 @@
   become: yes
   tasks:  
   - name: add nginx repo
-    yum:
+    pkg:
       name: epel-release
       state: present
   - name: installing nginx
-    yum:
+    pkg:
       name: nginx
       state: present
