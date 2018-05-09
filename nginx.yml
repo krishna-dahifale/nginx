@@ -1,6 +1,6 @@
 - name: install nginx
   hosts: nginx-server
-  user: acm
+  user: centos
   become: yes
   tasks:  
   - name: update the repo
