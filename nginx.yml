@@ -1,0 +1,20 @@
+- name: install nginx
+  hosts: test
+  user: acm
+  become: yes
+ 
+  tasks:
+  - name: update cache
+    yum:
+      name: "*"
+      update_only: yes
+  - name: disable selinux
+    command: setenforce 0
+  - name: add nginx repo
+    yum:
+      name: epel-release
+      state: present
+  - name: installing nginx
+    yum:
+      name: nginx
+      state: present
