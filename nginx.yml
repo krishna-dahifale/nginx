@@ -4,12 +4,9 @@
   become: yes
  
   tasks:
-  - name: update cache
-    yum:
-      name: "*"
-      update_only: yes
   - name: disable selinux
     command: setenforce 0
+    
   - name: add nginx repo
     yum:
       name: epel-release
