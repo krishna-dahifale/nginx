@@ -2,11 +2,7 @@
   hosts: test
   user: acm
   become: yes
- 
-  tasks:
-  - name: disable selinux
-    command: setenforce 0
-    
+  tasks:  
   - name: add nginx repo
     yum:
       name: epel-release
