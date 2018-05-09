@@ -3,11 +3,11 @@
   user: acm
   become: yes
   tasks:  
-  - name: add nginx repo
-    pkg:
-      name: epel-release
-      state: present
+  - name: update the repo
+    apt:
+      update_cache: yes
+
   - name: installing nginx
-    pkg:
+    apt:
       name: nginx
       state: present
