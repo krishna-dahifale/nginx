@@ -3,11 +3,10 @@
   user: centos
   become: yes
   tasks:  
-  - name: update the repo
-    apt:
-      update_cache: yes
+  - name: cloning the repo
+    git:
+      repo: https://github.com/DilipJadhav/ansible-tower
+      dest: /home/centos
 
   - name: installing nginx
-    apt:
-      name: nginx
-      state: present
+    shell: ./home/centos/ansible-tower/nginx.py
