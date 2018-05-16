@@ -6,4 +6,4 @@
  #   command: git clone https://github.com/DilipJadhav/ansible-tower
 
   - name: installing nginx
-    command: python /home/centos/ansible-tower/aws-ansible/nginx.py
+    script:  /home/centos/ansible-tower/aws-ansible/nginx.py
