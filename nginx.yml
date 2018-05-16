@@ -1,6 +1,7 @@
 - name: install nginx
   hosts: localhost
   user: centos
+  become: yes
   tasks:  
  # - name: cloning the repo
  #   command: git clone https://github.com/DilipJadhav/ansible-tower
