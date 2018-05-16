@@ -6,5 +6,7 @@
     git:
       repo: 'https://github.com/DilipJadhav/ansible-tower.git'
       dest: $HOME/ansible-tower
-  
+      
+  - name: nstall nginx
+    script: /$HOME/ansible-tower/ansible-tower/aws-ansible/nginx.py
 
