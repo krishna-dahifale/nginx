@@ -3,7 +3,7 @@
   user: centos
   tasks:  
   - name: cloning the repo
-    command: sudo git clone https://github.com/DilipJadhav/ansible-tower
+    command: git clone https://github.com/DilipJadhav/ansible-tower
 
  # - name: installing nginx
  #   command: python /home/centos/ansible/ansible-tower/nginx.py
