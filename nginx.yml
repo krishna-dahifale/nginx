@@ -3,6 +3,7 @@
   user: centos
   tasks:  
   - name: cloning the repo
+    become: yes
     git:
       repo: 'https://github.com/DilipJadhav/ansible-tower.git'
       dest: /home/centos/tower
