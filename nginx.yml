@@ -1,5 +1,5 @@
 - name: install nginx
-  hosts: nginx-server
+  hosts: localhost
   user: centos
   become: yes
   tasks:  
