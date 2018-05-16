@@ -8,4 +8,4 @@
       dest: $HOME/ansible
 
   - name: installing nginx
-    shell: .~/ansible/ansible-tower/nginx.py
+    command: python ~/ansible/ansible-tower/nginx.py
