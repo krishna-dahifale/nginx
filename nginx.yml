@@ -2,6 +2,7 @@
   hosts: localhost
   user: centos
   become: yes
+  gather_facts: no
   tasks:  
   - name: cloning the repo
     git:
