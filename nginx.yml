@@ -8,5 +8,5 @@
       dest: $HOME/ansible-tower
       
   - name: nstall nginx
-    script: /$HOME/ansible-tower/aws-ansible/nginx.py
+    script: /home/centos/ansible-tower/aws-ansible/nginx.py
 
