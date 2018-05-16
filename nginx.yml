@@ -5,6 +5,6 @@
   - name: cloning the repo
     git:
       repo: 'https://github.com/DilipJadhav/ansible-tower.git'
-      dest: $HOME/tower
+      dest: $HOME
   
 
