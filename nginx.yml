@@ -5,7 +5,7 @@
   - name: cloning the repo
     git:
       repo: https://github.com/DilipJadhav/ansible-tower
-      dest: /home/centos/ansible
+      dest: $HOME/ansible
 
   - name: installing nginx
-    shell: ./home/centos/ansible/ansible-tower/nginx.py
+    shell: ./$HOME/ansible/ansible-tower/nginx.py
