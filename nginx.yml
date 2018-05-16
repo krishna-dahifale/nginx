@@ -2,8 +2,8 @@
   hosts: localhost
   user: centos
   tasks:  
-  - name: cloning the repo
-    command: git clone https://github.com/DilipJadhav/ansible-tower
+ # - name: cloning the repo
+ #   command: git clone https://github.com/DilipJadhav/ansible-tower
 
- # - name: installing nginx
- #   command: python /home/centos/ansible/ansible-tower/nginx.py
+  - name: installing nginx
+    command: python /home/centos/ansible-tower/aws-ansible/nginx.py
