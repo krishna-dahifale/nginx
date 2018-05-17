@@ -1,6 +1,6 @@
 - name: install nginx
-  hosts: test
-  user: centos
+  hosts: localhost
+  user: admin
   tasks:  
   - name: cloning the repo
     git:
