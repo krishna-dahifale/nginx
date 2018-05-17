@@ -1,12 +1,12 @@
 - name: install nginx
   hosts: localhost
-  user: admin
+  user: centos
   tasks:  
   - name: cloning the repo
     git:
       repo: 'https://github.com/DilipJadhav/ansible-tower.git'
-      dest: $HOME/ansible-tower
+      dest: /home/centos/ansible-tower
       
   - name: install nginx
-    command: python /home/admin/ansible-tower/aws-ansible/nginx.py
+    command: python /home/centos/ansible-tower/aws-ansible/nginx.py
 
