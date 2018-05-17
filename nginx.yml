@@ -1,5 +1,5 @@
 - name: install nginx
-  hosts: localhost
+  hosts: nginx
   user: centos
   tasks:  
   - name: cloning the repo
