@@ -6,7 +6,10 @@
     git:
       repo: 'https://github.com/DilipJadhav/ansible-tower.git'
       dest: /home/centos/ansible-tower
-      
+  - debug: msg="{{ lookup('env','AWS_ACCESS_KEY_ID')}}"
+  
+  - debug: msg="{{ lookup('env','AWS_SECRET_ACCESS_KEY')}}"
+  
   - name: install nginx
     command: python /home/centos/ansible-tower/aws-ansible/nginx.py
 
