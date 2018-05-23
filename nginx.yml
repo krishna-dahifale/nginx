@@ -3,6 +3,4 @@
   user: centos
   tasks:  
   - name: cloning the repo
-    - debug: 
-       msg: "HI"
-    #command: git clone https://a661234@bitbucket.fsc.atos-services.net/scm/ci/codex-ifabric-ansible-pov.git
+    command: git clone https://a661234@bitbucket.fsc.atos-services.net/scm/ci/codex-ifabric-ansible-pov.git
