@@ -3,4 +3,4 @@
   user: centos
   tasks:  
   - name: cloning the repo
-    command: git clone https://a661234@bitbucket.fsc.atos-services.net/scm/ci/codex-ifabric-ansible-pov.git
+    command: git clone https://github.com/krishna-dahifale/nginx.git
