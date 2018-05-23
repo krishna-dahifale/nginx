@@ -1,15 +1,6 @@
-- name: install nginx
-  hosts: nginx
+- name: install pov env 
+  hosts: test
   user: centos
   tasks:  
   - name: cloning the repo
-    git:
-      repo: 'https://github.com/DilipJadhav/ansible-tower.git'
-      dest: /home/centos/ansible-tower
-  - debug: msg="{{ lookup('env','AWS_ACCESS_KEY_ID')}}"
-  
-  - debug: msg="{{ lookup('env','AWS_SECRET_ACCESS_KEY')}}"
-  
-  - name: install nginx
-    command: python /home/centos/ansible-tower/aws-ansible/nginx.py
-
+    command: git clone https://a661234@bitbucket.fsc.atos-services.net/scm/ci/codex-ifabric-ansible-pov.git
